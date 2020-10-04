@@ -20,5 +20,3 @@
 - Graph [LINK](https://github.com/sorious77/Study/tree/master/Data Structure/7.Graph)
 - Sorting [LINK](https://github.com/sorious77/Study/tree/master/Data Structure/8.Sorting)
 - Hashing [LINK](https://github.com/sorious77/Study/tree/master/Data Structure/9.Hashing)
-- HIHI
-- 
