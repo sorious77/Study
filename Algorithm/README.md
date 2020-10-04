@@ -36,7 +36,7 @@
 
 ## Reference
 
-- [DP vs Greedy]([https://velog.io/@cyranocoding/%EB%8F%99%EC%A0%81-%EA%B3%84%ED%9A%8D%EB%B2%95Dynamic-Programming%EA%B3%BC-%ED%83%90%EC%9A%95%EB%B2%95Greedy-Algorithm-3yjyoohia5](https://velog.io/@cyranocoding/동적-계획법Dynamic-Programming과-탐욕법Greedy-Algorithm-3yjyoohia5))
-- [Algorithm List 1]([https://librewiki.net/wiki/%EC%8B%9C%EB%A6%AC%EC%A6%88:%EC%88%98%ED%95%99%EC%9D%B8%EB%93%AF_%EA%B3%BC%ED%95%99%EC%95%84%EB%8B%8C_%EA%B3%B5%ED%95%99%EA%B0%99%EC%9D%80_%EC%BB%B4%ED%93%A8%ED%84%B0%EA%B3%BC%ED%95%99/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98_%EA%B8%B0%EC%B4%88](https://librewiki.net/wiki/시리즈:수학인듯_과학아닌_공학같은_컴퓨터과학/알고리즘_기초))
-- [Algorithm List 2]([https://librewiki.net/wiki/%EC%8B%9C%EB%A6%AC%EC%A6%88:%EC%88%98%ED%95%99%EC%9D%B8%EB%93%AF_%EA%B3%BC%ED%95%99%EC%95%84%EB%8B%8C_%EA%B3%B5%ED%95%99%EA%B0%99%EC%9D%80_%EC%BB%B4%ED%93%A8%ED%84%B0%EA%B3%BC%ED%95%99/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98_%EC%A4%91%EA%B8%89](https://librewiki.net/wiki/시리즈:수학인듯_과학아닌_공학같은_컴퓨터과학/알고리즘_중급))
+- [DP vs Greedy](https://velog.io/@cyranocoding/%EB%8F%99%EC%A0%81-%EA%B3%84%ED%9A%8D%EB%B2%95Dynamic-Programming%EA%B3%BC-%ED%83%90%EC%9A%95%EB%B2%95Greedy-Algorithm-3yjyoohia5)
+- [Algorithm List 1](https://librewiki.net/wiki/시리즈:수학인듯_과학아닌_공학같은_컴퓨터과학/알고리즘_기초)
+- [Algorithm List 2](https://librewiki.net/wiki/시리즈:수학인듯_과학아닌_공학같은_컴퓨터과학/알고리즘_중급)
 
