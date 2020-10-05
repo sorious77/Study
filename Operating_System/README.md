@@ -14,6 +14,6 @@
     ### Memory Management
   - Main Memory [LINK](https://github.com/sorious77/Study/tree/master/Data%20Structure/8.Sorting)
   - Virtual Memory [LINK](https://github.com/sorious77/Study/tree/master/Data%20Structure/9.Hashing)
+    ### File Management
   - Mass Storage & File System Interface [LINK](https://github.com/sorious77/Study/tree/master/Data%20Structure/7.Graph)
   - File & I/O Systems [LINK](https://github.com/sorious77/Study/tree/master/Data%20Structure/8.Sorting)
-  - Virtual Memory [LINK](https://github.com/sorious77/Study/tree/master/Data%20Structure/9.Hashing)
