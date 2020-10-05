@@ -32,6 +32,43 @@
 
 
 
+## In C++
+
+- 동적, 정적 할당이 모두 가능
+
+  ```c++
+  int a[5]; // 정적 할당
+  
+  int *b = new int[5]; // 동적 할당
+  
+  int **c = new int[5]; // 이차원 배열의 동적 할당
+  for(int i=0;i<5;i++){
+      c[i] = new int[5];
+  }
+  ```
+
+- 함수의 파라미터로 사용하는 경우, Pass By Reference 타입으로 전달
+
+  ```c++
+  int change(int *a){
+      a[1] = 9999;
+  }
+  
+  int main(){
+      int a[3] = {1,2,3};
+      
+      printf("%d %d %d", a[0], a[1], a[2]); // 1 2 3 출력
+      
+      change(a);
+      
+      printf("%d %d %d", a[0], a[1], a[2]); // 1 9999 3 출력
+      
+      return 0;
+  }
+  ```
+
+
+
 ## Practice
 
 - 배열의 합 : [LINK](https://www.acmicpc.net/problem/2167)
