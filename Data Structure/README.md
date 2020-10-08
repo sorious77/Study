@@ -8,7 +8,6 @@
   - Stack [LINK](https://github.com/sorious77/Study/tree/master/Data%20Structure/3.Stack)
   - Queue [LINK](https://github.com/sorious77/Study/tree/master/Data%20Structure/4.Queue)
     - Priority queue
-      - Heap
   - List [LINK](https://github.com/sorious77/Study/tree/master/Data%20Structure/5.List)
   - Tree [LINK](https://github.com/sorious77/Study/tree/master/Data%20Structure/6.Tree)
     - Binary Tree

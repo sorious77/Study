@@ -9,6 +9,8 @@
   - 깊이 우선 탐색(DFS)
   - 재귀 함수
 
+<img src="https://user-images.githubusercontent.com/49060014/95403472-47ffa480-094d-11eb-9364-6bf4a335f46f.png">
+
 ## In C++
 
 - 헤더 파일 \<stack> 선언 시 사용 가능
@@ -52,10 +54,10 @@
         s.pop(); // 2 1
         s.push(4); // 4 2 1
         
-        cout << s.top(); // print 4
+        cout << s.top() << "\n"; // print 4
         
-        cout << s.empty(); // false
-        cout << s.size(); // 3
+        cout << s.empty() << "\n"; // false
+        cout << s.size() << "\n"; // 3
         
         s.emplace(5); // 5 4 2 1
         
@@ -63,7 +65,7 @@
         
         s.swap(temp); // s : empty, temp : 5 4 2 1
         
-        cout << s.empty(); // true
+        cout << s.empty() << "\n"; // true
         
         return 0;
     }
