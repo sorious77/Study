@@ -19,7 +19,7 @@
                 <td>64 sec</td>
             </tr>
             <tr>
-                <td>n = 10</td>
+                <td>n = 100</td>
                 <td>10,000 sec</td>
                 <td>2<sup>100</sup> sec (= 4 * 10<sup>22</sup> year)</td>
             </tr>
