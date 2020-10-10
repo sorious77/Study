@@ -41,7 +41,7 @@
   
   int *b = new int[5]; // 동적 할당
   
-  int **c = new int[5]; // 이차원 배열의 동적 할당
+  int **c = new int* [5]; // 이차원 배열의 동적 할당
   for(int i=0;i<5;i++){
       c[i] = new int[5];
   }
