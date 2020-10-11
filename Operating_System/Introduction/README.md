@@ -43,19 +43,18 @@
 1. nonvolatile
 2. magnetic disk
 3. holding large quantities of data (and programs)
-
-- Storage system organized in a hierarchy
-1. cost per bit 반비례 access time
+4. Storage system organized in a hierarchy
+  - cost per bit 반비례 access time
 
 ## I/O Structure
 CPU - common bus - Device controller
 
 1. Device controller
-- local buffer
-- special purpose registers
+  - local buffer 
+  - special purpose registers
 2. Device driver
-- device controller 이헤
-- uniform interface to the device 
+  - device controller 이헤
+  - uniform interface to the device 
 
 ## Direct memory access (DMA)
 1. tranfer an entire block of device data to memory **without CPU**
@@ -79,11 +78,13 @@ CPU - common bus - Device controller
   3.2 Fault tolerant System
 
   **- Symmetric multiprocessing (SMP) <-> ASMP (boss-worker)**
+  
     1. multiprocessor design
     2. all processors are considered peers
     3. run independently of one another
 
   **- Clustered system**
+  
     1. multiprocessor system
     2. consist of multiple computer systems connected by a local-area net
 
