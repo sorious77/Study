@@ -1,6 +1,7 @@
 ---
 Process
 ---
+<!DOCTYPE html>
 <span style="color:red">내용</span>
 
 - Process
@@ -87,3 +88,4 @@ Process
     register : stack, register
 
     ps number
+</html>
