@@ -1,7 +1,6 @@
 ---
 Process
 ---
-<span style="color:red">red</span>
 - Process
 
     program in execution ← process's current activity
