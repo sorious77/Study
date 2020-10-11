@@ -48,3 +48,41 @@ Process
 
     between parent & child ps
 
+
+----------------------------------------------------------------------------------------------------------------------------------------------------
+- Scheduling
+    1. short-term(하위스케줄링) ← ps scheduler : CPU 할당 시기와 특정 ps 지정, context-switching 
+    2. mid : 어떤 ps 가 CPU를 할당받을것인지 결정, 프로세스 too many → 일시보류 후 활성화 ( 부하조절 )
+    3. long(상위, job) : 자원차지할 ps 결정 후 ready queue로 보냄 ← job scheduler
+
+- Context-switching
+
+    I/O request
+
+    time slice expired
+
+    fork a child
+
+    wiat for an interrupt...
+
+    Context : ps state, register 
+
+    하나의 프로세스를 실행하고 있는 상태에서
+
+    interrupt 요청에 의해 다음 우선 순위의 프로세스가 실행되어야 할 때
+
+    OS 스케줄러가
+
+    기존의 프로세스의 상태 또는 레지스터 값(Context)을 저장하고 CPU가 다음 프로세스를 수행하도록 새로운 프로세스의 상태 또는 레지스터 값(Context)를 **교체하는 작업**
+
+    In Multiprocess environment
+
+- PCB
+
+    ps state : new, ready, run, paused, terminated
+
+    ps counter : the cmd address that will be running next
+
+    register : stack, register
+
+    ps number
