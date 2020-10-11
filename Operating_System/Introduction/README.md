@@ -3,9 +3,9 @@
 ## Operating system?
 
 1. Resource allocator to manage the computer HW
--- CPU time, memory, sortage, I/O devices...
+- CPU time, memory, sortage, I/O devices...
 2. provide an environment for application programs to run
--- prevent errors
+- prevent errors
 3. interface to the computer system provides to the user
 
 ## Computer System
