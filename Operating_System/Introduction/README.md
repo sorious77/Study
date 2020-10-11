@@ -31,8 +31,6 @@ Introduction
 3. Handle interrupt from I/O
 4. Restore 
 
-# Memory Management
-
 ## Main memory
 
 1. only processor can access directly 
