@@ -11,7 +11,7 @@ Process
 
     program in execution ← process's current activity
 
-    the states : ```# new, ready, running, waiting , terminated```
+    the states : ```diff  # new, ready, running, waiting , terminated```
 
 - Process Control Block(PCB)
 ```diff
