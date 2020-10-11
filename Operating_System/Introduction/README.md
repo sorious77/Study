@@ -1,6 +1,8 @@
-# Introduction
+---
+Introduction
+---
 
-## Operating system?
+# Operating system?
 
 1. Resource allocator to manage the computer HW
 - CPU time, memory, sortage, I/O devices...
@@ -28,6 +30,8 @@
 2. Save the address of process worked 
 3. Handle interrupt from I/O
 4. Restore 
+
+# Memory Management
 
 ## Main memory
 
@@ -90,54 +94,64 @@ CPU - common bus - Device controller
 
 ## Utilize the CPU
 
-multiprogramming 
+  **Multiprogramming** 
 
-1. allows several jobs to be in memory at the same time
-2. CPU always has a job to execute
+    1. allows several jobs to be in memory at the same time
+    2. CPU always has a job to execute
+    3. job pool 
 
-Time-sharing system
+  **Time-sharing system(Multi-Tasking)**
 
-1. extension of multiprogramming
-2. CPU scheduling algorithms rapidly switch between jobs → illusion
+    1. extension of multiprogramming
+    2. CPU scheduling algorithms rapidly switch between jobs → illusion
+    3. Interactive computer system (short response time)
 
 ## Correct operation
 
-Dual more
+**Dual more**
 
-1. hw has 2 modes ( user / kernel )
+    1. hw has 2 modes ( user / kernel )
 
-Privileged Instructions
+**Privileged Instructions**
 
-1. Instruction ( I/O, halt ) are privileged and executed only in kernel mode
+    1. Instruction ( I/O, halt ) are privileged and executed only in kernel mode
 
-Memory protection
+**Memory protection**
 
-1. The memory be protected from modification by the user
+    1. The memory be protected from modification by the user
 
-Timer interrupt
+**Timer interrupt**
 
-1. Timer prevents infinite loops
+    1. Timer prevents infinite loops
 
 ## Process ( job )
 
 fundamental unit of work 
 
-- Process management
-1. creat/delete/ processes
-2. providing mechanisms for processes to communicate and synchronize with each other
+### Process Management
+    1. creat/delete/ processes
+    2. providing mechanisms for processes to communicate and synchronize with each other
 
-- Memory management
-1. keeping track of what parts of memory are being used and by whom
-2. dynamically allocating
-3. freeing memory space
+### Memory Management
+    1. keeping track of what parts of memory are being used and by whom
+    2. dynamically allocating
+    3. freeing memory space
 
-- File system
-1. represent files and dir
-2. manage space on mass- storage devices
+### Strage Management
+    1. represent files and dir
+    2. manage space on mass- storage devices
+    
+### Caching
+    1. programmable
+    2. HW -supported
 
-- Security
-1. control the access of processes / user to the resources
-    1. defending a computer system from external or internal attacks
+**Data Transfer**
+1. Cache - CPU : HW
+2. Disk - Memory: OS
+
+### Security
+    1. control the access of processes / user to the resources
+    2. defending a computer system from external or internal attacks
     
 ---------------------------------------------------------------------------------------------------------------------------------------------
 
