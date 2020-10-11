@@ -2,6 +2,10 @@
 OS Structure
 ---
 
+- Application programming interface (API)
+    - portability
+    - programmers' 편의
+
 - System Calls ( lowest level )
     - running program to make requests from the os directly
 
