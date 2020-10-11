@@ -13,7 +13,7 @@ Process
 
     the states : 
     ```diff
-    # new, ready, running, waiting , terminated
+    new, ready, running, waiting , terminated
     ```
 
 - Process Control Block(PCB)
