@@ -138,4 +138,78 @@ fundamental unit of work
 - Security
 1. control the access of processes / user to the resources
     1. defending a computer system from external or internal attacks
+    
+---------------------------------------------------------------------------------------------------------------------------------------------
 
+- multiprogramming & time-sharing environment
+
+Stealing or copying one’s programs or data
+
+Using system resources (CPU, memory, disk space, peripherals ) without proper accounting
+
+- resource utilization
+
+Mainframes : mem, CPU, storage, net bandwidth
+
+Workstations : mem, CPU
+
+Handheld : power consumption, mem
+
+- Time-sharing system rather than PC, single-user
+1. large task
+2. fast hw
+3. few other users
+
+- Functionalities need to be supported by os
+
+Batch programming ?
+
+Virtual mem : handheld, real-time systems
+
+Time sharing : real-time
+
+- symmetric multiprocessing
+
+treats all processors as equals
+
+I/O on any CPU
+
+- Asymmetric multiprocessing
+
+one master CPU ← I/O
+
+master distributes tasks among slaves
+
+- Multiprocessors
+
+save money
+
+not duplicate power supplies
+
+execute programs more quickly
+
+reliability
+
+more complex in both hw, sw
+
+- Clustered system
+
+combine multiple computers into single system
+
+communicate using msg
+
+if they cooperate to provide a highly available service
+
+→ should be replicated 
+
+→ one fail, the other take-over
+
+- Multiprocessor
+
+single physical entity comprising of multiple CPUs
+
+communicate using shared mem
+
+- Client-server
+
+- Peer-to-peer
