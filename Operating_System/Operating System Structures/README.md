@@ -8,6 +8,10 @@ OS Structure
 
 - System Calls ( lowest level )
     - running program to make requests from the os directly
+    
+- Process Communication   
+        1. Msg-passing 
+        2. Shared-memory -> 동기화 필요
 
 - Command Interpreter / shell ( higher level )
     - provides mechanism for a user to issue a request without writing program
