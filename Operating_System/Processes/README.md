@@ -1,6 +1,12 @@
 ---
 Process
 ---
+```diff
+- text in red
++ text in green
+! text in orange
+# text in gray
+```
 - Process
 
     program in execution ← process's current activity
