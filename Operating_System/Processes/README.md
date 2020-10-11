@@ -29,18 +29,20 @@ Process
 
 - Queue
 
-    Waiting queue : it is not executing
+    **Waiting queue** : it is not executing
 
-    I/O request queue :
+    **I/O request queue** :
 
-    Ready queue : waiting for CPU && ready to execute
+    **Ready queue** : waiting for CPU && ready to execute
 
 - Process
+
     I/O bound
     
     CPU-bound
 
 - Scheduling
+
     1. Long term (JOB) : from job pool
     
     will be allowed to contend for the CPU ← Resource-allocation, Memory management
@@ -50,11 +52,13 @@ Process
     3. Medium term : mix 1 & 2
 
 - PS Swapping
+
     Medium term 스케줄러 
     
     잠시 메모리에서 PS 제거
 
 - Context Switch 
+
    하나의 프로세스를 실행하고 있는 상태에서
 
     interrupt 요청에 의해 다음 우선 순위의 프로세스가 실행되어야 할 때
@@ -77,6 +81,7 @@ Process
     concurrent execution → info sharing, computation speedup, modularity, convenience 
     
 - PS Creation
+
     fork()
     
     child : pid = 0 (return 0)
@@ -84,6 +89,7 @@ Process
     parent : pid > 0 (return pid)
     
 - PS Termination
+
     exit()
     
     deallocate resources
@@ -101,7 +107,7 @@ Process
 
     Cooperating processes
 
-    1. message passing : ← OS itself
+    **1. message passing** : ← OS itself
         
         limited data size
         
@@ -113,7 +119,7 @@ Process
         ```
 
     
-    2. shared memory : 
+    **2. shared memory : **
     
         cache coherency issue
         
@@ -124,21 +130,21 @@ Process
         ```diff
         - Producer-Consumer Problem
         
-    3. Direct read and write operation     
+    **3. Direct read and write operation   **  
 
     can be used simultaneously
 
 - Communication in client-server system
 
-    1. Socket : endpoint for communication 
+    **1. Socket** : endpoint for communication 
 
      connection between a pair of application = pairs of sockets
 
-    2. RPC (Remote Procedure Call) 
+    **2. RPC (Remote Procedure Call)** 
 
     on a remote application
 
-    3. Pipe : simple 
+    **3. Pipe** : simple 
 
     between parent & child ps
 
