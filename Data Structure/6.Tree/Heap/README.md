@@ -20,7 +20,93 @@
   - 주로 배열을 이용하여 구현하며, 시작 인덱스는 1을 사용
 
   ```c++
+  #include <iostream>
   
+using namespace std;
+  
+  void insertHeap(int* heap, int num, int *index); // heap에 num을 삽입하는 함수
+  int deleteHeap(int* heap, int* index);
+  
+  int main() {
+  	int maxHeap[100] = { 0, };
+  
+  	int index = 0;
+  
+  	insertHeap(maxHeap, 1, &index); // 1
+  	insertHeap(maxHeap, 2, &index); // 2 1
+  	insertHeap(maxHeap, 3, &index); // 3 1 2
+  	insertHeap(maxHeap, 4, &index); // 4 3 2 1
+  
+  
+  	cout << deleteHeap(maxHeap, &index) << "\n"; // 3 1 2
+  	cout << deleteHeap(maxHeap, &index) << "\n"; // 2 1
+  	cout << deleteHeap(maxHeap, &index) << "\n"; // 1
+  	cout << deleteHeap(maxHeap, &index) << "\n"; // empty
+  }
+  
+  void insertHeap(int* heap, int num, int *index) { // index 자리에 num을 삽입하는 함수
+  	if (*index == 0) {
+  		heap[++(*index)] = num;
+  		return;
+  	}
+  
+  	(*index)++;
+  
+  	int temp = *index;
+  
+  	while (true) {
+  		if (temp <= 1)
+  			break;
+  
+  		if (heap[temp / 2] > num) {
+  			heap[temp] = num;
+  			break;
+  		}
+  
+  		heap[temp] = heap[temp / 2];
+  		temp /= 2;
+  	}
+  
+  	if (temp == 1)
+  		heap[temp] = num;
+  }
+  
+  int deleteHeap(int* heap, int* index) {
+  	int data = heap[1]; // heap의 루트 노드를 반환
+  
+  	heap[1] = heap[*index];
+  	heap[(*index)--] = 0;
+  
+  	int cur = 1;
+  	int temp = heap[1];
+  
+  	while (true) {
+  		if (heap[cur * 2] == 0) // 리프 노드인 경우
+  			break;
+  
+  		int next;
+  
+  		if (heap[cur * 2 + 1] == 0) // 자식이 하나인 경우, 다음에 비교할 자식은 왼쪽 자식
+  			next = cur * 2;
+  		else {
+              // 자식이 두개인 경우, 더 큰 값을 가진 자식과 비교
+  			next = heap[cur * 2] > heap[cur * 2 + 1] ? cur * 2 : cur * 2 + 1;
+  		}
+  
+  		if (temp < heap[next]) { // 자식과 자리를 바꿔야할 경우
+  			heap[cur] = heap[next];
+  			cur = next;
+  		}
+  		else {
+  			heap[cur] = temp;
+  			break;
+  		}
+  	}
+  
+  	heap[cur] = temp;
+  
+  	return data;
+  }
   ```
-
+  
   
