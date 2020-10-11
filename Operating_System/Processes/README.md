@@ -2,6 +2,7 @@
 Process
 ---
 <!DOCTYPE html>
+<html lang="en">
 <span style="color:red">내용</span>
 
 - Process
