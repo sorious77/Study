@@ -13,7 +13,11 @@ Process
 
     the states : new, ready, running, waiting , terminated
 
-- PCB
+- Process Control Block(PCB)
+```diff
+- ps state, ps number, program counter, register...
++ 목적: 스케줄링, 메모리, I/O 접근...
+```
 
 - Queue
 
