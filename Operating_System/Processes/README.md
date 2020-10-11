@@ -107,7 +107,7 @@ Process
 
     Cooperating processes
 
-    **1. message passing** : ← OS itself
+    1. **message passing** : ← OS itself
         
         limited data size
         
@@ -119,7 +119,7 @@ Process
         ```
 
     
-    **2. shared memory : **
+    2. **shared memory** :
     
         cache coherency issue
         
@@ -129,22 +129,23 @@ Process
         
         ```diff
         - Producer-Consumer Problem
+        ```
         
-    **3. Direct read and write operation   **  
+    3. **Direct read and write operation   **  
 
     can be used simultaneously
 
 - Communication in client-server system
 
-    **1. Socket** : endpoint for communication 
+    1. **Socket** : endpoint for communication 
 
      connection between a pair of application = pairs of sockets
 
-    **2. RPC (Remote Procedure Call)** 
+    2. **RPC (Remote Procedure Call)** 
 
     on a remote application
 
-    **3. Pipe** : simple 
+    3. **Pipe** : simple 
 
     between parent & child ps
 
