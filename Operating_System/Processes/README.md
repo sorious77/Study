@@ -131,23 +131,23 @@ Process
         - Producer-Consumer Problem
         ```
         
-    3. **Direct read and write operation   **  
+    3. **Direct read and write operation**  
 
     can be used simultaneously
 
-- Communication in client-server system
+    4 **Client-server system**
 
-    1. **Socket** : endpoint for communication 
+        1. **Socket** : endpoint for communication 
 
-     connection between a pair of application = pairs of sockets
+        connection between a pair of application = pairs of sockets
 
-    2. **RPC (Remote Procedure Call)** 
+        2. **RPC (Remote Procedure Call)** 
 
-    on a remote application
+        on a remote application
 
-    3. **Pipe** : simple 
+        3. **Pipe** : simple 
 
-    between parent & child ps
+        between parent & child ps
 
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------
