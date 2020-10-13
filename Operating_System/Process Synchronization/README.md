@@ -57,7 +57,7 @@ Process Synchronization
   - 우선 순위 적용 가능
   
 ```diff
-  + CPU 스케줄링
++ CPU 스케줄링
 ```
 
 # Peterson's solution
@@ -76,8 +76,9 @@ boolean flag[2] # 특정 PS가 임계구역 진입 준비가 되었다.
 - lock 반환시 release()
 
 ```diff
-  - CPU 낭비 = 바쁜 대기
-  + Context Switch X
+- CPU 낭비 = 바쁜 대기
++ Context Switch X
+```
 
  ```c
  acquire(){
