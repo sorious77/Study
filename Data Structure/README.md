@@ -18,4 +18,4 @@
 - Sorting [LINK](https://github.com/sorious77/Study/tree/master/Data%20Structure/8.Sorting)
 - Hashing [LINK](https://github.com/sorious77/Study/tree/master/Data%20Structure/9.Hashing)
 
-- Search [LINK]
+- Search [LINK](https://github.com/sorious77/Study/tree/master/Data%20Structure/10.Search)
