@@ -11,9 +11,10 @@ Process
 
     program in execution ← process's current activity
 
-    the states : 
+    the states :
+
     ```diff
-    # new, ready, running, waiting , terminated
+    ! new, ready, running, waiting , terminated
     ```
 
 - Process Control Block(PCB)
@@ -29,58 +30,58 @@ Process
 
 - Queue
 
-    **Waiting queue** : it is not executing
+    ​	**Waiting queue** : it is not executing
 
-    **I/O request queue** :
+    ​	**I/O request queue** :
 
-    **Ready queue** : waiting for CPU && ready to execute
+    ​	**Ready queue** : waiting for CPU && ready to execute
 
 - Process
 
-    I/O bound
+    ​	I/O bound
     
-    CPU-bound
+    ​	CPU-bound
 
 - Scheduling
 
     1. Long term (JOB) : from job pool
-    
+
     will be allowed to contend for the CPU ← Resource-allocation, Memory management
-    
+
     2. Short term (CPU) : from ready queue
-    
+
     3. Medium term : mix 1 & 2
 
-- PS Swapping
+    ## PS Swapping
 
-    Medium term 스케줄러 
+    ​	Medium term 스케줄러 
+
+    ​	잠시 메모리에서 PS 제거
+
     
-    잠시 메모리에서 PS 제거
 
-- Context Switch 
+    ## Context Switch 
 
-   하나의 프로세스를 실행하고 있는 상태에서
+    하나의 프로세스를 실행하고 있는 상태에서 interrupt 요청에 의해 다음 우선 순위의 프로세스가 실행되어야 할 때
 
-    interrupt 요청에 의해 다음 우선 순위의 프로세스가 실행되어야 할 때
+     OS 스케줄러가
 
-    OS 스케줄러가
+     *기존의 프로세스의 상태 또는 레지스터 값(Context)을 저장*하고 CPU가 다음 프로세스를 수행하도록 *새로운 프로세스의 상태 또는 레지스터 값(Context)*를 **교체하는 작업**
 
-    *기존의 프로세스의 상태 또는 레지스터 값(Context)을 저장*하고 CPU가 다음 프로세스를 수행하도록 *새로운 프로세스의 상태 또는 레지스터 값(Context)*를 **교체하는 작업**
-    
     ```diff
     + state save/restore
     - pure overhead <- HW의 지원 필요
     ```
 
-    In Multiprocess environment
-    
-    
-    
-- Parent/child mechanism
+     In Multiprocess environment
+
+     
+
+- ## Parent/child mechanism
 
     concurrent execution → info sharing, computation speedup, modularity, convenience 
     
-- PS Creation
+- ## PS Creation
 
     fork()
     
@@ -88,27 +89,32 @@ Process
     
     parent : pid > 0 (return pid)
     
-- PS Termination
+- ## PS Termination
 
     exit()
-    
+
     deallocate resources
-    
+
     wait()
-    
+
     parent: exit status 값 받기를 기다림
-    
+
     - zombie
         자식이 부모의 wait 호출 전 종료됨, 자식의 상태 모름
+        
     - orphan
         부모 종료
+        
+        
+        
+        
 
-- Interprocess communication (IPC)
+    ## Interprocess communication (IPC)
 
     Cooperating processes
 
     1. **message passing** : ← OS itself
-        
+       
         limited data size
         
         easier to implement
@@ -118,9 +124,9 @@ Process
         -  Message queue 용량에 따른 Buffering
         ```
 
-    
+
     2. **shared memory** :
-    
+
         cache coherency issue
         
         faster
@@ -133,30 +139,37 @@ Process
         
     3. **Direct read and write operation**  
 
-    can be used simultaneously
+        ​	can be used simultaneously
 
-    4 **Client-server system**
+        
 
-        1. **Socket** : endpoint for communication 
+    ## Client-server system
 
-        connection between a pair of application = pairs of sockets
+    1. **Socket** : endpoint for communication 
 
-        2. **RPC (Remote Procedure Call)** 
+       connection between a pair of application = pairs of sockets
 
-        on a remote application
+    
 
-        3. **Pipe** : simple 
+    2. **RPC (Remote Procedure Call)** 
 
-        between parent & child ps
+       on a remote application
+
+    
+
+    3. **Pipe** : simple 
+
+       between parent & child ps
 
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------
-- Scheduling
+- ## Scheduling
+    
     1. short-term(하위스케줄링) ← ps scheduler : CPU 할당 시기와 특정 ps 지정, context-switching 
     2. mid : 어떤 ps 가 CPU를 할당받을것인지 결정, 프로세스 too many → 일시보류 후 활성화 ( 부하조절 )
-    3. long(상위, job) : 자원차지할 ps 결정 후 ready queue로 보냄 ← job scheduler
-
-- Context-switching
+3. long(상위, job) : 자원차지할 ps 결정 후 ready queue로 보냄 ← job scheduler
+    
+- ## Context-switching
 
     I/O request
 
@@ -168,19 +181,11 @@ Process
    
     ```diff
     - Context : ps state, register
-    ```    
+    ```
 
-    하나의 프로세스를 실행하고 있는 상태에서
+    
 
-    interrupt 요청에 의해 다음 우선 순위의 프로세스가 실행되어야 할 때
-
-    OS 스케줄러가
-
-    *기존의 프로세스의 상태 또는 레지스터 값(Context)을 저장*하고 CPU가 다음 프로세스를 수행하도록 *새로운 프로세스의 상태 또는 레지스터 값(Context)*를 **교체하는 작업**
-
-    In Multiprocess environment
-
-- PCB
+- ## PCB
 
     ps state : new, ready, run, paused, terminated
 
