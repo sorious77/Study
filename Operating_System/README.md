@@ -9,7 +9,6 @@
   - Processes [LINK](https://github.com/sorious77/Study/tree/master/Operating_System/Processes)
   - Threads [LINK](https://github.com/sorious77/Study/tree/master/Operating_System/Threads)
   - Process Synchronization [LINK](https://github.com/sorious77/Study/tree/master/Operating_System/Process%20Synchronization)
-  - CPU Scheduling [LINK](https://github.com/sorious77/Study/tree/master/Operating_System/CPU%20Scheduling)
   - Deadlock [LINK](https://github.com/sorious77/Study/tree/master/Operating_System/Deadlock)
     ### Memory Management
   - Main Memory [LINK](https://github.com/sorious77/Study/tree/master/Operating_System/Main%20Memory)
