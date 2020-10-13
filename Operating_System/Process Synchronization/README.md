@@ -28,9 +28,12 @@ Process Synchronization
     counter--;
   }
   ```
-  * Race Condition
+  * Race Condition 발생 -> critical section 해결책
   
-  - Critial Section
+  
+# Critical Section Problem
+
+- Critial Section
     ```c
     do{
       entry section
@@ -39,7 +42,6 @@ Process Synchronization
         # remainder section
     }while(true);
     ```
-# Critical Section Problem
   
   임계구역의 조건 
   
