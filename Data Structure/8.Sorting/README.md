@@ -13,6 +13,7 @@
   - Divide and Conquer(분할 정복)을 이용한 정렬 방식
   - 더 이상 쪼개지지 않을 때까지 분할을 반복한 후, <b>합병</b>을 수행
   - 각 부분 집합의 가장 첫 번째 원소부터 비교를 시작하여 병합함
+  - 데이터 전체를 저장할 추가 저장 공간이 필요함
 - 선택 정렬(Selection Sort)
   - 전체 원소에서 해당 인덱스에 위치해야 하는 원소를 <b>선택</b>하여 자리를 교환하는 방식
   - 가장 작은 값을 첫 번째, 두번째로 작은 값을 두 번째, ... 반복
@@ -27,12 +28,14 @@
   - 주어진 데이터를 이용하여 최대(최소)힙을 만든 후, Delete 과정을 거쳐 정렬하는 방식
   - 내림차순은 Max Heap, 오름차순은 Min Heap을 이용
 - 기수 정렬(Radix Sort)
-  - 자리수에 따라 정렬을 하는 방식
+  - 자릿수에 따라 정렬을 하는 방식
   - 1의 자리, 10의 자리, 100의 자리, ... 의 순으로, 각 자리의 값이 같은 원소끼리 부분집합을 만들어 정렬하는 방식
+  - 비교 연산을 하지 않으며, 시간 복잡도가 자릿수에 따라 달라짐
+  - 정수나 문자열과 같은 특수한 경우에만 사용이 가능함
 
 
 
-## Time Complexity
+## Features
 
 <table style="text-align:center">
     <thead>
@@ -40,6 +43,8 @@
         <th>Best</th>
         <th>Average</th>
         <th>Worst</th>
+        <th>Space Complexity</th>
+        <th>Stability</th>
         <th>Run-time(sec)</th>
     </thead>
     <tbody>
@@ -48,6 +53,8 @@
             <td>n<sup>2</sup></td>
             <td>n<sup>2</sup></td>
             <td>n<sup>2</sup></td>
+            <td>0</td>
+            <td>T</td>
             <td>22.894</td>
         </tr>
         <tr>
@@ -55,6 +62,8 @@
             <td>n<sup>2</sup></td>
             <td>n<sup>2</sup></td>
             <td>n<sup>2</sup></td>
+            <td>0</td>
+            <td>T</td>
             <td>10.842</td>
         </tr>
         <tr>
@@ -62,6 +71,8 @@
             <td>n</td>
             <td>n<sup>2</sup></td>
             <td>n<sup>2</sup></td>
+            <td>0</td>
+            <td>T</td>
             <td>7.438</td>
         </tr>
         <tr>
@@ -69,6 +80,8 @@
             <td>nlog<sub>2</sub>n</td>
             <td>nlog<sub>2</sub>n</td>
             <td>nlog<sub>2</sub>n</td>
+            <td>0</td>
+            <td>F</td>
             <td>0.034</td>
         </tr>
         <tr>
@@ -76,6 +89,8 @@
             <td>nlog<sub>2</sub>n</td>
             <td>nlog<sub>2</sub>n</td>
             <td>nlog<sub>2</sub>n</td>
+            <td>N</td>
+            <td>T</td>
             <td>0.026</td>
         </tr>
         <tr>
@@ -83,17 +98,20 @@
             <td>nlog<sub>2</sub>n</td>
             <td>nlog<sub>2</sub>n</td>
             <td>n<sup>2</sup></td>
+            <td>2N+2</td>
+            <td>F</td>
             <td>0.014</td>
         </tr>
         <tr>
             <td>Radix Sort</td>
-            <td>d(자리수) * n</td>
+            <td>d(자릿수) * n</td>
             <td>d * n</td>
             <td>d * n</td>
+            <td>3d + 3</td>
+            <td>F</td>
             <td> </td>
         </tr>
     </tbody>
 </table>
 
-## Characteristic
-
+- Stability(안정성) : 중복된 값이 있을 경우, 인덱스가 낮은 값이 정렬 이후에도 더 낮은 인덱스를 가지는지 여부
