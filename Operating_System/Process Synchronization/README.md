@@ -137,56 +137,6 @@ signal(S){
 - '하' 가 세마포어 반환시 원래 우선순위로 돌아감
 - '하'가 빨리 race condition 벗어나 세마포어 반납 = 우선순위 역전 시간 단축
 
-# Deadlocks
-
-하나의 PS 때문에 2개 이상의 PS가 무한 대기 상태
-
-
-
-## Starvation
-
-스케줄링, 상호배제 알고리즘에서 나온 에러에 의해 발생
-
-세마포어에서 프로세스가 무한 대기 상태인 경우
-
-
-
-## 용어
-
-* Resource : 
-* Instance :
-* Request :
-* Use : 
-* Release : 
-
-PS 는 자원 사용 전 반드시 요청하고 사용 후에는 자원을 반납
-
-## 4 가지 조건
-
-1. **Mutual Exclusion**
-
-2. **Hold and Wait**
-
-   특정 자원 소유한 상태에서 추가로 다른 자원 얻으려고 대기
-
-3. **No preemption**
-
-   *공유 자원(세마포어, lock ..)*에 대한 선점
-
-   이미 다른 PS가 소유하고 있는 자원 강제로 뺏을수 없음
-
-4. **Circular Wait **
-
-   p1이 소유한 자원을 p2가 요구, p2가 소유한 자원 p1이 요구
-
-## 교착상태의 표현
-
-- Resource Allocation Graph
-  - Vertex 정점  (P1,P2,... R1,R2..)
-  - Edge 간선 (자원요청, 자원할당)
-  - P 프로세스 집합
-  - R 자원타입 집합
-
 # 동기화 문제
 
 ## Bounded buffer probelm
@@ -259,6 +209,6 @@ y.signal();
 # OpenMP
 
 ```c
-#pragma omp critical
+# pragma omp critical
 ```
 
