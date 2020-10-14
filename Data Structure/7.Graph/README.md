@@ -1,6 +1,6 @@
 ## Graph
 
-- 정점(Vertex)와 간선(Edge)로 구성된 집합
+- 정점(Vertex)과 간선(Edge)으로 구성된 집합
 
 - 용어
   - 정점(Vertex) : 위치를 나타냄(Node라고도 부름)
