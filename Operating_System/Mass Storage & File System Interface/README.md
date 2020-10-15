@@ -44,7 +44,7 @@ Storage Management
 
 ## File Control Block (information-node)
 
-![image-20201015174951484](/Users/hyeong/Library/Application Support/typora-user-images/image-20201015174951484.png)
+![image-20201015174951484](./img/1.png)
 
 * **Boot block** : 시작 블록
 * **Super Block** : 그다음 블록 ( i-node table.size, file system.size in logical block ) **Volume Control**
@@ -75,7 +75,7 @@ Storage Management
 
 ## Directory
 
-![image-20201015175840446](/Users/hyeong/Library/Application Support/typora-user-images/image-20201015175840446.png)
+![image-20201015175840446](./img/2.png)
 
 
 
@@ -89,7 +89,7 @@ Storage Management
 
 # Virtual File system
 
-![image-20201015175929718](/Users/hyeong/Library/Application Support/typora-user-images/image-20201015175929718.png)
+![image-20201015175929718](./img/3.png)
 
 
 
@@ -99,7 +99,7 @@ Allocate to disk blocks to files
 
 - ### Contiguous
 
-  ![image-20201015181019388](/Users/hyeong/Library/Application Support/typora-user-images/image-20201015181019388.png)
+  ![image-20201015181019388](./img/4.png)
 
   ```diff
   -external fragmentation => compaction
@@ -108,11 +108,11 @@ Allocate to disk blocks to files
 
 - ### linked
 
-![image-20201015180941176](/Users/hyeong/Library/Application Support/typora-user-images/image-20201015180941176.png)
+![image-20201015180941176](./img/5.png)
 
 - ### Indexed 
 
-  ![image-20201015181006209](/Users/hyeong/Library/Application Support/typora-user-images/image-20201015181006209.png)
+  ![image-20201015181006209](./img/6.png)
 
 # Disk Scheduling
 
@@ -124,11 +124,11 @@ Allocate to disk blocks to files
 
 ## FCFS(first-come, first-serviced algorithm)
 
-<img src="/Users/hyeong/Library/Application Support/typora-user-images/image-20201015182008828.png" alt="image-20201015182008828" style="zoom:50%;" />
+<img src="./img/7.png" alt="image-20201015182008828" style="zoom:50%;" />
 
 ## SSTF(Shortest-seek-time-first algorithm)
 
-<img src="/Users/hyeong/Library/Application Support/typora-user-images/image-20201015182019291.png" alt="image-20201015182019291" style="zoom:50%;" />
+<img src="./img/8.png" alt="image-20201015182019291" style="zoom:50%;" />
 
 ```diff
 - Starvation
@@ -137,15 +137,15 @@ Allocate to disk blocks to files
 
 ## SCAN
 
-<img src="/Users/hyeong/Library/Application Support/typora-user-images/image-20201015182106210.png" alt="image-20201015182106210" style="zoom:50%;" />
+<img src="./img/9.png" alt="image-20201015182106210" style="zoom:50%;" />
 
 ## C-SCAN (Circular SCAN)
 
-<img src="/Users/hyeong/Library/Application Support/typora-user-images/image-20201015182237282.png" alt="image-20201015182237282" style="zoom:50%;" />
+<img src="./img/10.png" style="zoom:50%;" />
 
 ## LOOK
 
 •Disk arm changes direction before reaching the end
 
-<img src="/Users/hyeong/Library/Application Support/typora-user-images/image-20201015182304218.png" alt="image-20201015182304218" style="zoom:50%;" />
+<img src="./img/11.png" style="zoom:50%;" />
 
