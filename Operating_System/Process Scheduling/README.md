@@ -12,7 +12,7 @@ Time Slice 의 크기가 중요
 
 할당시간 크면 FCFS랑 다를바 없음
 
-## SRT
+## SRT(Shortest Remain Time)
 
 대기큐 가장 짧은 소요시간 ps선택
 
