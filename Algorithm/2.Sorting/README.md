@@ -6,10 +6,12 @@
   - Bubble Sort
   - Insertion Sort
   - Selection Sort
+  - [Problem](https://www.acmicpc.net/problem/2750)
 - <i>O(nlogn)</i>
   - Merge Sort
   - Quick Sort
   - Heap Sort
+  - [Problem](https://www.acmicpc.net/problem/2751)
 - 특수 정렬
   - Bucket Sort
   - Radix Sort
